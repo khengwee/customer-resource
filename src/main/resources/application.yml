@@ -1,0 +1,30 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /api/resource/
+
+security:
+  oauth2:
+    client:
+      clientId: 0oaivx2uysUxzlFvd0h7
+      clientSecret: jdo1xC5AXlgsR5Wy4zNz82MoO9_kxPZX1gGkVa7d
+    resource:
+      tokenInfoUri: https://dev-517011.oktapreview.com/oauth2/default/v1/introspect
+
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        clientId:
+#          kong:
+#            client-id: PeG612yegNfn1fuypmdbcAKMbD4a
+#            client-secret: RoUw8eSRxjLHLBf48aXke5Wku70a
+#            scopes: RPBWMApiService_GET
+#            authorization-grant-type: client_credentials
+#        provider:
+#          kong:
+#            token-uri: https://identity-sit.api.dev.net/oauth2/token
+
+logging:
+  level:
+    web: debug

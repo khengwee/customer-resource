@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "type": "customers",
+      "attributes": {
+        "name": "JohnSmith",
+        "segment": "Priority"
+      },
+      "links": {
+        "self": "http://localhost:8081/api/customers/1"
+      }
+    },
+    {
+      "id": "2",
+      "type": "customers",
+      "attributes": {
+        "name": "TailorSwift",
+        "segment": "Personal"
+      },
+      "links": {
+        "self": "http://localhost:8081/api/customers/2"
+      }
+    }
+  ],
+  "meta": {
+    "totalResourceCount": 2
+  }
+}
