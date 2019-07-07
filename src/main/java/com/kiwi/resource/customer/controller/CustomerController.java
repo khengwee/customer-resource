@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets;
 @RestController
 public class CustomerController {
 
-    @GetMapping(value = "/customers", produces = "application/vnd.api+json")
+    @GetMapping(value = "/customers", produces = "application/json")
     @PreAuthorize("#oauth2.hasScope('customer_read')")
     public String findAll() {
         String customers = null;
@@ -24,7 +24,7 @@ public class CustomerController {
         return customers;
     }
 
-    @GetMapping(value = "/customers/{id}", produces = "application/vnd.api+json")
+    @GetMapping(value = "/customers/{id}", produces = "application/json")
     @PreAuthorize("#oauth2.hasScope('customer_read')")
     public String findOne(@PathVariable String id) {
         String customers = null;
